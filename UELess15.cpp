@@ -4,20 +4,29 @@
 #include <iostream>
 
 
-int main()
+
+void FindOddNumber(bool IsOdd, int n)
+{
+	for (int i = IsOdd; i <= n; i += 2)
+	{
+		std::cout << i << ' ';
+	}
+}
+int main() 
 {
 	const int n = 10;
-	
+
 	for (int index = 0; index <= n; index++)
 	{
-
+		
 		if (index % 2 == 0)
 		{
-			std::cout << index << "\n";
+			std::cout << index << " ";
 		}
-
+		
 	}
-	
+	std::cout << "\n";
+	FindOddNumber(true, n); 
 }
 
 
